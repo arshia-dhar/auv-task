@@ -22,7 +22,7 @@ for contour in contours:
     if 4 <= corners <= 8:
         cv2.drawContours(img, [approx], -1, (0, 255, 0), 3)
 
-points = cv2.goodFeaturesToTrack(imgErode,7,0.01,10)
+points = cv2.goodFeaturesToTrack(imgErode,8,0.01,10)
 points = np.int64(points)
 
 xmax, ymax = (np.max(points, axis=0)).ravel()
