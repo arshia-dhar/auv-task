@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img=cv2.imread("Resources\Arrow2.jpeg")
+img=cv2.imread("Resources\Arrow1.jpeg")
 
 HSV=cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 lowerRed = np.array([0, 50, 20])
